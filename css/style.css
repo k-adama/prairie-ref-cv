@@ -1,0 +1,495 @@
+/* propriétés d'ensemble des elements de la page*/
+
+*{
+
+    font-family: Avenir, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
+
+}
+
+/*couleur de fond du corps de la page*/
+
+body{
+
+    background-color: bisque;
+
+}
+
+
+/*barre horizontale*/
+
+hr{
+
+    border: 2px solid rgba(42, 59, 57, 0.966);
+    width: 350px;
+    margin-top: 50px;
+   
+
+}
+
+/*mise en place de la section et gestion d'effet*/
+
+section{
+    
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: -20px auto;
+    box-shadow: 0px 0px 10px #bbb;
+    background-color: rgb(226, 207, 146);
+    
+}
+
+
+
+/* Espacement des éléments h2 de la section, les grands titres*/
+
+section h2{
+    margin: 20px 0;
+    width: 90%;
+}
+
+
+/* psitionner verticalement le contenu des div*/
+
+section > div{
+    width: 90%;
+}
+
+
+/*Creation de forme d'insertion image et position*/
+
+.photo img{
+
+    width: 150px;
+    height: 170px;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 10px #777;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-right: -100px;
+    float: right;
+
+}
+
+
+/* Position du nom et prénom et forme*/
+
+h1{
+
+    text-align:left;
+
+    font-size: 30px;
+
+    color: rgb(5, 107, 107);
+    margin-left: -100px;
+    margin-top: 70px;
+    
+
+    }
+
+    /* style d'écirture date de naissance */
+
+.naiss{
+
+    font-style: italic;
+
+    font-weight: 600;
+    margin-left: -90px;
+    
+
+}
+
+
+/* effet sur la profession */
+
+.metier{
+
+    text-align: left;
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    font-style: oblique;
+    margin-left: -120px;
+    
+}
+
+/*Centrer les grands titres tel profil, etc puis appliquer des couleur et soulignage*/
+
+.ali{
+    text-align: center;
+    color: rgb(39, 168, 168);
+    text-decoration-line: underline;
+   
+}
+
+
+
+/*centrer texte profil */
+
+.profil{
+
+    text-align: center;
+}
+
+
+
+/*gestion de la marge des paragraphes*/
+
+ .align p{
+
+    margin-left: 150px;
+    
+} 
+
+
+/*mise en forme coordonnées*/
+
+.coordonnee{
+
+    margin-left: 150px;
+    color: rgb(170, 22, 133);
+}
+
+
+/*position des liste d'élements pointillés*/
+
+.align li{
+    
+    margin-left: 150px;
+}
+
+
+/*position paragraphe des div*/
+
+.alignement p{
+
+    margin-left: 150px;
+    
+}
+
+
+/*position des h4 */
+
+.align h4{
+
+    margin-left: 170px;
+
+}
+
+/*couleur h5*/
+
+.align h5{
+    color: blue;
+    margin-left: 80px;
+    margin-left: 170px;
+
+}
+
+/*effet bleu en survolant le nom*/
+h1:hover{
+    color: blue;
+}
+
+li:hover{
+    background-color: brown;
+}
+
+.profil:hover{
+    background-color: rgb(135, 209, 222);
+}
+
+
+
+
+/*tout peripherique ne depassant pas 480px de large */
+
+@media all and (max-device-width: 480px ){ */
+    
+    section{
+
+        width: auto;
+        height: auto;
+        box-shadow: 0px 0px 10px #bbb;
+
+    } 
+
+   
+    #container{
+
+        width: auto;
+        height: auto;
+       
+   }
+
+
+   hr{
+
+    width: 60%;
+    margin-left: 5%;
+    margin-top: auto;
+
+}
+
+.align p{
+
+    margin-left: 50px;
+
+}
+
+.align li{
+    
+    margin-left: 90px;
+}
+
+.photo img{
+
+    width: 100px;
+    height: 100px;
+
+}
+
+
+
+}
+
+
+
+/*largeur 540px */
+
+@media all and (max-device-width : 540px){
+
+    section{
+
+        margin: -20px auto;
+        background-color:rgba(52, 203, 214, 0.342);
+
+    } 
+
+    
+.align p{
+
+    margin-left: 10%;
+
+}
+
+
+.naiss{
+    margin-left: 10%;
+    
+}
+
+/* effet sur la profession */
+
+.metier{
+    margin-left: 2%;
+    
+}
+
+
+h1{
+    margin-left: 10%;
+    margin-top: 70%;
+    
+    }
+
+    .photo img{
+        width: 170px;
+        height: 180px;
+        margin-top: 40px;
+        margin-right: 30%;
+    
+    }
+
+
+    .align h4{
+
+        margin-left: 18%;
+    
+    }
+
+    .align h5{
+
+        margin-left: 19%;
+    
+    }
+
+
+    
+.align li{
+    
+    margin-left: 15%;
+}
+
+
+
+  
+
+}
+
+
+/*Utilisation de média queries pour gerer la section et le contenu avec le mode d'affichage*/
+
+ @media screen and (min-width: 768px){ */
+    
+    section{
+
+        width: 80%;
+        box-shadow: 0px 0px 10px #bbb;
+
+        
+    } 
+
+
+    #container{
+
+         width: 700px;
+         margin: 0 auto;
+         font-size: 30px;
+        
+    }
+
+    h1{
+        margin-left: 2%;
+        margin-top: 20%;
+        font-size: 40px;
+        
+        }
+
+    
+.naiss{
+    margin-left: 5%;
+    font-size: 20px;
+    
+}
+
+/* effet sur la profession */
+
+ .metier{
+    font-size: 25px;
+    
+}
+
+    .photo img{
+        width: 180px;
+        height: 200px;
+    
+    } 
+
+
+    .align h4{
+
+        margin-left: 18%;
+    
+    }
+
+    .align h5{
+
+        margin-left: 19%;
+    
+    }
+
+
+    
+.align li{
+    
+    margin-left: 15%;
+}
+
+
+
+        
+
+   
+ } 
+
+
+
+ @media screen and (min-width: 1036px){ */
+    
+    section{
+
+        width: 80%;
+        box-shadow: 0px 0px 10px #bbb;
+
+        
+    } 
+
+
+    #container{
+
+         width: 700px;
+         margin: 0 auto;
+         font-size: 20px;
+        
+    }
+
+    h1{
+        margin-left: 2%;
+        margin-top: 20%;
+        font-size: 40px;
+        
+        }
+
+    
+.naiss{
+    margin-left: 5%;
+    font-size: 20px;
+    
+}
+
+/* effet sur la profession */
+
+ .metier{
+    font-size: 25px;
+    
+}
+
+    .photo img{
+        
+        width: 180px;
+        height: 200px;
+        transition: 1s; /* effet progressif de transition : 1 seconde */
+    
+    } 
+ 
+    /* la taille est augmentée lors du survol et l'image décalée par le heigth */
+    img:hover { 
+        
+        width: 180px;
+        height: 300px;
+    }
+
+
+
+    .align h4{
+
+        margin-left: 18%;
+    
+    }
+
+    .align h5{
+
+        margin-left: 19%;
+    
+    }
+
+
+    
+.align li{
+    
+    margin-left: 15%;
+}
+
+
+
+        
+
+   
+ } 
+
+
+ 
